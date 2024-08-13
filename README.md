@@ -16,6 +16,10 @@ File Processor is a Python application that automates the process of unzipping, 
 - Python 3.11.4+
 - tkinter (usually comes pre-installed with Python)
 
+## Purpose:
+
+The purpose of the application is to make it easier to perform "find and replace" operations on zipped files, and return the updated directories to their original zipped form.
+
 ## Configuration
 
 The application requires three JSON configuration files:
@@ -57,6 +61,10 @@ This file contains the logic to what files to replace with what, in all director
     "file_to_replace2": "path_to_replacement_file2"
 }
 ```
+
+## Known issues:
+
+Closing the application is half-handled, in some cases, processes may run for much longer after closing, until they "realize" they are supposed to shut down.
 
 ## Note:
 
